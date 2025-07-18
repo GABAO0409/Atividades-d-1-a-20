@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 20</title>
+</head>
+<body>
+  <input type="text" id="texto" placeholder="Digite algo">
+  <button onclick="converter()">Converter</button>
+  <div id="resultado"></div>
+
+  <script>
+    function converter() {
+      const input = document.getElementById('texto');
+      const textoMaiusculo = input.value.toUpperCase();
+      document.getElementById('resultado').textContent = textoMaiusculo;
+    }
+  </script>
+</body>
+</html>
