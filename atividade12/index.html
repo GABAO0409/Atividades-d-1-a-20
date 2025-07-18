@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 12</title>
+  <style>
+    .destacar {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p id="texto" class="destacar">Texto com classe</p>
+
+  <script>
+    const elemento = document.getElementById('texto');
+    elemento.classList.remove('destacar');
+  </script>
+</body>
+</html>

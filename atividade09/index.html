@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 09</title>
+</head>
+<body>
+  <p id="mensagem">Você pode me ver!</p>
+  <button onclick="esconder()">Esconder/Mostrar</button>
+
+  <script>
+    function esconder() {
+      const elem = document.getElementById("mensagem");
+      if (elem.style.display === "none") {
+        elem.style.display = "block";
+      } else {
+        elem.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 16</title>
+</head>
+<body>
+  <label for="selecionar">Escolha um texto:</label>
+  <select id="selecionar">
+    <option value="Opção 1">Opção 1</option>
+    <option value="Opção 2">Opção 2</option>
+    <option value="Opção 3">Opção 3</option>
+  </select>
+
+  <div id="conteudo">Conteúdo padrão</div>
+
+  <script>
+    const select = document.getElementById('selecionar');
+    const conteudo = document.getElementById('conteudo');
+
+    select.addEventListener('change', () => {
+      conteudo.textContent = select.value;
+    });
+  </script>
+</body>
+</html>

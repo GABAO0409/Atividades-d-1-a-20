@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 18</title>
+</head>
+<body>
+  <form id="formEmail">
+    <input type="text" id="email" placeholder="Digite seu email">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensagem"></div>
+
+  <script>
+    const form = document.getElementById('formEmail');
+    const mensagem = document.getElementById('mensagem');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (regex.test(email)) {
+        mensagem.textContent = 'Email válido!';
+        mensagem.style.color = 'green';
+      } else {
+        mensagem.textContent = 'Email inválido!';
+        mensagem.style.color = 'red';
+      }
+    });
+  </script>
+</body>
+</html>

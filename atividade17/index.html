@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 17</title>
+</head>
+<body>
+  <label for="estilo">Escolha o estilo:</label>
+  <select id="estilo">
+    <option value="normal">Normal</option>
+    <option value="bold">Negrito</option>
+    <option value="italic">Itálico</option>
+    <option value="underline">Sublinhado</option>
+  </select>
+
+  <p id="texto">Texto padrão</p>
+
+  <script>
+    const estilo = document.getElementById('estilo');
+    const texto = document.getElementById('texto');
+
+    estilo.addEventListener('change', () => {
+      texto.style.fontWeight = 'normal';
+      texto.style.fontStyle = 'normal';
+      texto.style.textDecoration = 'none';
+
+      switch (estilo.value) {
+        case 'bold':
+          texto.style.fontWeight = 'bold';
+          break;
+        case 'italic':
+          texto.style.fontStyle = 'italic';
+          break;
+        case 'underline':
+          texto.style.textDecoration = 'underline';
+          break;
+      }
+    });
+  </script>
+</body>
+</html>

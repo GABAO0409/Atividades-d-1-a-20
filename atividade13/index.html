@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 13</title>
+</head>
+<body>
+  <div id="pai1">
+    <p id="filho">Sou o filho</p>
+  </div>
+
+  <div id="pai2">
+    <p>Aqui é o novo pai</p>
+  </div>
+
+  <script>
+    const filho = document.getElementById('filho');
+    const novoPai = document.getElementById('pai2');
+    novoPai.appendChild(filho);
+  </script>
+</body>
+</html>

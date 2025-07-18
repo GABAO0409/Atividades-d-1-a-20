@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 05</title>
+</head>
+<body>
+  <p id="area">Este fundo mudará de cor</p>
+  <button id="botao">Clique aqui</button>
+
+  <script>
+    const area = document.getElementById("area");
+    const botao = document.getElementById("botao");
+
+    botao.addEventListener("click", () => {
+      area.style.backgroundColor = "yellow";
+    });
+  </script>
+</body>
+</html>
